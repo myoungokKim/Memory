@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/img_fa"
+        android:layout_width="match_parent"
+        android:layout_height="765px"
+        android:background="@drawable/family_sim"
+        android:gravity="center"
+        android:padding="32dp" />
+    <ImageView
+        android:id="@+id/img_fa2"
+        android:layout_width="match_parent"
+        android:layout_height="765px"
+        android:background="@drawable/family_sim2"
+        android:gravity="center"
+        android:padding="32dp" />
+
+</GridLayout>

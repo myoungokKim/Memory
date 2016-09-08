@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/appcreate02/Downloads/Memory/Application/build/intermediates/res/merged/debug/menu/main_menu.xml",
+        "source": "/Users/appcreate02/Downloads/Memory/Application/src/main/res/menu/main_menu.xml"
+    },
+    {
         "merged": "/Users/appcreate02/Downloads/Memory/Application/build/intermediates/res/merged/debug/menu/navigation_drawer.xml",
         "source": "/Users/appcreate02/Downloads/Memory/Application/src/main/res/menu/navigation_drawer.xml"
     }
