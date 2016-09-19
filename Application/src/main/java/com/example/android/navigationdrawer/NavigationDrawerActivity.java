@@ -243,18 +243,18 @@ public class NavigationDrawerActivity extends Activity implements PlanetAdapter.
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = null;
+            View rootView = inflater.inflate(R.layout.fragment_planet, container);
             int i = getArguments().getInt(ARG_PLANET_NUMBER);
-            if (i == 0)
-                rootView = inflater.inflate(R.layout.fragment_family, container, false);
-            else if (i == 1)
-                rootView = inflater.inflate(R.layout.fragment_friend, container, false);
-            else
-                rootView = inflater.inflate(R.layout.fragment_teacher, container, false);
+            String planet=getResources().getStringArray(R.array.planets_array)[i];
+
+            int imageId=getResources().getIdentifier(planet.toLowerCase(Locale.getDefault()),
+                    "drawable", getActivity().getPackageName());
 
             iv=((ImageView)rootView.findViewById(R.id.image));
             iv.setOnClickListener(m_nda);
+            iv.setImageResource(imageId);
 
+            getActivity().setTitle(planet);
             return rootView;
         }
     }

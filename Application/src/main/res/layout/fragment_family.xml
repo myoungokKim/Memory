@@ -20,5 +20,4 @@
         android:background="@drawable/family_sim2"
         android:gravity="center"
         android:padding="32dp" />
-
 </GridLayout>
